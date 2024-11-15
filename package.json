@@ -1,11 +1,16 @@
 {
+  "license": "MIT",
   "scripts": {
     "lint:fix": "prettier */*.js \"*/**/*{.js,.ts}\" -w",
-    "lint": "prettier */*.js \"*/**/*{.js,.ts}\" --check"
+    "lint": "prettier */*.js \"*/**/*{.js,.ts}\" --check",
+    "setup": "tsx setup-pyth-accounts.ts",
+    "raise": "tsx raise-price.ts",
+    "lower": "tsx lower-price.ts"
   },
   "dependencies": {
     "@coral-xyz/anchor": "^0.30.0",
-    "@solana-developers/helpers": "^2.4.0"
+    "@solana-developers/helpers": "^2.4.0",
+    "envfile": "^7.1.0"
   },
   "devDependencies": {
     "@types/bn.js": "^5.1.0",
